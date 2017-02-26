@@ -1,4 +1,4 @@
-//usr/bin/env go run $0 $@ ; exit
+#! /usr/bin/env gorun
 
 // <bitbar.title>Check hosts</bitbar.title>
 // <bitbar.version>v1.0</bitbar.version>

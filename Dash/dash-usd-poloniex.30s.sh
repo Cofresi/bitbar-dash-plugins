@@ -16,6 +16,5 @@ dashIconBase64='iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAqFBMVEUAAAAcdbwc
 dashLast=$(curl -s https://poloniex.com/public?command=returnTicker | tr '}' '\n' | grep USDT_DASH | tr -d '{}"' | tr ':,' '\n' | grep -A1 "last" | tail -1)
 printf "$%.*f | image=%s\n" 2 "$dashLast" "$dashIconBase64"
 echo "---"
-echo "Live chart | href=\"https://www.cryptocompare.com/coins/dash/overview/USD""
+echo "Live chart | href=\"https://www.cryptocompare.com/coins/dash/overview/USD\""
 echo "dash.org homepage | href=\"https://www.dash.org\""
-
